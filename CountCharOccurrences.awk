@@ -6,5 +6,5 @@ BEGIN { FS = "" }
 }
 END {
     for(x in count)
-	print x ":" count[x]
+	print x ":\t" count[x] "\t" (count[x]/NF)
 }
